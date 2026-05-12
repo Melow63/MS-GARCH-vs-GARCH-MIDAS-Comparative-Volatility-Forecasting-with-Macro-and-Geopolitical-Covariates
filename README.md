@@ -11,29 +11,29 @@
 
 
 ## Methodology : 
-  # Models to estimate : 
+  ### Models to estimate : 
     GARCH (1, 1), simple as a benchmark
     GARCH-MIDAS with GPR Index, EPU Index, NFCI, and a combination of all of them.
     MS-GARCH 2 regimes & 3 regimes
     Systematic comparison between families of models
 
-  # Data :
+  ### Data :
     S&P 500 daily returns (Yahoo Finance) / 2010-2025 period
     GPR index — Geopolitical Risk Index (Caldara & Iacoviello 2022), monthly
     EPU index — Economic Policy Uncertainty (Baker et al.), monthly
     NFCI — National Financial Conditions Index (Chicago Fed), weekly
 
-  # Model evaluation : 
+  ### Model evaluation : 
     In-sample: BIC, Maximum Likelihood, variance ratio
     Out-of-sample: Diebold-Mariano test
     Risk application: Dynamic VaR at 95% & 99%
     Backtesting: Kupiec & Christoffersen tests
 
-  # Programming languages:
+  ### Programming languages:
     Python
     R
 
-  # Deliverable:
+  ### Deliverable:
     Reports (Word documents with graphs, tables...)
     Github (repo + code + results...)
 
