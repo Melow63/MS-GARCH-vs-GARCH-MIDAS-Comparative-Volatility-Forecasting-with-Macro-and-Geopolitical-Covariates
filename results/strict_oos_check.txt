@@ -1,0 +1,21 @@
+Strict out-of-sample check: parameters estimated on 2010-2022, test 2023-2025
+MS-GARCH(2) train fit: loglik=-4151.6 p11=0.825 p22=0.250
+MS-GARCH(3) skipped (use --starts3 N to include it)
+
+Point forecasts (variance vs squared return)
+GARCH(1,1)   RMSE=3.503e-4  QLIKE=-8.5275
+MS-GARCH(2)  RMSE=3.480e-4  QLIKE=-8.5340
+GARCH-MIDAS  RMSE=3.606e-4  QLIKE=-8.4207
+
+Diebold-Mariano (HAC h=1), negative = first model has the lower squared loss
+MS-GARCH(2) vs GARCH(1,1)   DM= -0.405  p=0.685
+GARCH-MIDAS vs GARCH(1,1)   DM=  0.543  p=0.587
+MS-GARCH(2) vs GARCH-MIDAS  DM= -0.908  p=0.364
+
+VaR backtest (one-step-ahead; MS-GARCH by mixture-CDF inversion with predicted probabilities)
+GARCH(1,1)   95%:  39/750 =  5.20%  Kupiec p=0.803  Christoffersen p=0.982
+MS-GARCH(2)  95%:  43/750 =  5.73%  Kupiec p=0.367  Christoffersen p=0.744
+GARCH-MIDAS  95%:  33/751 =  4.39%  Kupiec p=0.437  Christoffersen p=0.651
+GARCH(1,1)   99%:  12/750 =  1.60%  Kupiec p=0.129  Christoffersen p=0.180
+MS-GARCH(2)  99%:   8/750 =  1.07%  Kupiec p=0.856  Christoffersen p=0.069
+GARCH-MIDAS  99%:  16/751 =  2.13%  Kupiec p=0.007  Christoffersen p=0.346

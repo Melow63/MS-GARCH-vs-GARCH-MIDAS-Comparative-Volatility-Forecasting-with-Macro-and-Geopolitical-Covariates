@@ -1,0 +1,12 @@
+numpy
+pandas
+scipy
+matplotlib
+seaborn
+arch
+yfinance
+fredapi
+openpyxl
+xlrd
+jupyter
+pytest
